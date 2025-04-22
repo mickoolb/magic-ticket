@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -60,9 +59,13 @@ const Hero = () => {
               <span className="text-sm font-medium">Evento Especial en Chile</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-magic-dark leading-tight">
-              Entre Diosas y{' '}
-              <span className="bg-gradient-to-r from-magic to-magic-dark bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Entre{' '}
+              <span className="bg-gradient-to-r from-[#7a42ff] via-[#f2c300] to-[#ff69b4] bg-clip-text text-transparent animate-pulse-soft">
+                Diosas
+              </span>{' '}
+              y{' '}
+              <span className="bg-gradient-to-r from-[#f2c300] via-[#ff69b4] to-[#7a42ff] bg-clip-text text-transparent animate-pulse-soft">
                 Volcanes
               </span>
             </h1>

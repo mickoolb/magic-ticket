@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -15,11 +14,10 @@ import About from "./pages/About";
 import Admin from "./pages/Admin";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
+import Artists from "./pages/Artists";
 
-// Install QRCode library for ticket generation
 import QRCode from 'qrcode';
 
-// Create a new QueryClient instance
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -37,9 +35,9 @@ const App = () => {
                 <Route path="/events/:id" element={<EventDetail />} />
                 <Route path="/buy" element={<BuyTicket />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/artists" element={<Artists />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/dashboard" element={<AdminDashboard />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

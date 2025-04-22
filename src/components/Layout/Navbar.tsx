@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Ticket, Calendar, Users, ShieldCheck } from 'lucide-react';
@@ -11,18 +10,19 @@ const Navbar = () => {
     <nav className="bg-magic-dark/80 backdrop-blur-md border-b border-magic/20 py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link to="/" className="flex items-center">
             <Ticket className="h-8 w-8 text-magic mr-2" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-magic to-magic-dark bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-to-r from-[#f2c300] via-[#ff69b4] to-[#7a42ff] bg-clip-text text-transparent">
               MagicTicket
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/events" className="text-white hover:text-magic-gold font-medium transition-colors">
               Eventos
+            </Link>
+            <Link to="/artists" className="text-white hover:text-magic-gold font-medium transition-colors">
+              Artistas Invitados
             </Link>
             <Link to="/about" className="text-white hover:text-magic-gold font-medium transition-colors">
               Quiénes Somos
@@ -58,6 +58,14 @@ const Navbar = () => {
             >
               <Calendar className="h-5 w-5 text-magic" />
               <span>Eventos</span>
+            </Link>
+            <Link 
+              to="/artists" 
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Users className="h-5 w-5 text-magic" />
+              <span>Artistas Invitados</span>
             </Link>
             <Link 
               to="/about" 
