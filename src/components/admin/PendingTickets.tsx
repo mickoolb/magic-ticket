@@ -139,28 +139,28 @@ const PendingTickets: React.FC<PendingTicketsProps> = ({
       {filteredPendingTickets.length > 0 ? (
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead className="bg-magic-light/30 text-magic-dark">
+            <thead className="bg-magic-light/30">
               <tr>
-                <th className="px-4 py-3 text-left">Referencia</th>
-                <th className="px-4 py-3 text-left">Evento</th>
-                <th className="px-4 py-3 text-left">Cliente</th>
-                <th className="px-4 py-3 text-left">Email</th>
-                <th className="px-4 py-3 text-left">Cantidad</th>
-                <th className="px-4 py-3 text-left">Monto</th>
-                <th className="px-4 py-3 text-left">Fecha Solicitud</th>
-                <th className="px-4 py-3 text-center">Acciones</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Referencia</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Evento</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Cliente</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Email</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Cantidad</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Monto</th>
+                <th className="px-4 py-3 text-left text-black font-bold">Fecha Solicitud</th>
+                <th className="px-4 py-3 text-center text-black font-bold">Acciones</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-magic-light/50">
               {filteredPendingTickets.map((pendingTicket) => (
                 <tr key={pendingTicket.id} className="hover:bg-magic-light/20">
-                  <td className="px-4 py-3 font-mono">{pendingTicket.paymentReference}</td>
-                  <td className="px-4 py-3">{pendingTicket.eventName}</td>
-                  <td className="px-4 py-3">{pendingTicket.customerName}</td>
-                  <td className="px-4 py-3">{pendingTicket.customerEmail}</td>
-                  <td className="px-4 py-3 text-center">{pendingTicket.quantity}</td>
-                  <td className="px-4 py-3">${(pendingTicket.price * pendingTicket.quantity).toLocaleString()}</td>
-                  <td className="px-4 py-3">{new Date(pendingTicket.requestDate).toLocaleString()}</td>
+                  <td className="px-4 py-3 font-mono text-black">{pendingTicket.paymentReference}</td>
+                  <td className="px-4 py-3 text-black">{pendingTicket.eventName}</td>
+                  <td className="px-4 py-3 text-black">{pendingTicket.customerName}</td>
+                  <td className="px-4 py-3 text-black">{pendingTicket.customerEmail}</td>
+                  <td className="px-4 py-3 text-center text-black">{pendingTicket.quantity}</td>
+                  <td className="px-4 py-3 text-black">${(pendingTicket.price * pendingTicket.quantity).toLocaleString()}</td>
+                  <td className="px-4 py-3 text-black">{new Date(pendingTicket.requestDate).toLocaleString()}</td>
                   <td className="px-4 py-3">
                     <div className="flex justify-center gap-2">
                       {pendingTicket.status === 'pending' && (
