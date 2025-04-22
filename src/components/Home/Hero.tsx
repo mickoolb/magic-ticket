@@ -95,12 +95,12 @@ const Hero = () => {
           </div>
           
           <div className="relative z-10">
-            <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-6 border border-magic-light shadow-xl">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden bg-gradient-to-br from-magic-light to-white">
+            <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-4 border border-magic-light shadow-xl">
+              <div className="aspect-[3/4] rounded-lg overflow-hidden">
                 <img 
                   src="/attached_assets/entre deosas.jpeg" 
                   alt="Entre Diosas y Volcanes" 
-                  className="w-full h-full object-contain rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-magic-dark/40 to-transparent flex items-end p-6">
                   <div className="text-white">
