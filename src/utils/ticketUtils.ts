@@ -220,6 +220,18 @@ export const getPendingTickets = (): PendingTicket[] => {
 };
 
 // Aprobar un ticket pendiente
+// Importar nodemailer
+import nodemailer from 'nodemailer';
+
+// Configurar el transporte de correo
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD
+  }
+});
+
 export const approvePendingTicket = async (pendingTicketId: string): Promise<Ticket[]> => {
   const pendingTickets = getPendingTickets();
   const pendingTicketIndex = pendingTickets.findIndex(ticket => ticket.id === pendingTicketId);
@@ -250,8 +262,42 @@ export const approvePendingTicket = async (pendingTicketId: string): Promise<Tic
   pendingTickets[pendingTicketIndex] = pendingTicket;
   localStorage.setItem('pendingTickets', JSON.stringify(pendingTickets));
   
-  // En una aplicación real, aquí enviaríamos un correo con los boletos
-  console.log(`Enviando ${pendingTicket.quantity} boleto(s) a ${pendingTicket.customerEmail}`);
+  // Enviar correo con los boletos
+  try {
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: pendingTicket.customerEmail,
+      subject: `Boletos confirmados - ${pendingTicket.eventName}`,
+      html: `
+        <h1>¡Tus boletos han sido confirmados!</h1>
+        <p>Hola ${pendingTicket.customerName},</p>
+        <p>Tu pago ha sido aprobado y tus boletos están listos.</p>
+        <h2>Detalles del evento:</h2>
+        <ul>
+          <li>Evento: ${pendingTicket.eventName}</li>
+          <li>Fecha: ${pendingTicket.eventDate}</li>
+          <li>Lugar: ${pendingTicket.eventLocation}</li>
+          <li>Cantidad: ${pendingTicket.quantity} boleto(s)</li>
+          <li>Total pagado: $${(pendingTicket.price * pendingTicket.quantity).toLocaleString()}</li>
+        </ul>
+        <h2>Tus boletos:</h2>
+        ${generatedTickets.map(ticket => `
+          <div style="margin-bottom: 20px; border: 1px solid #ccc; padding: 10px;">
+            <p>ID del boleto: ${ticket.id}</p>
+            <img src="${ticket.qrCode}" alt="Código QR" style="width: 200px;"/>
+          </div>
+        `).join('')}
+        <p>Presenta este correo o los códigos QR en la entrada del evento.</p>
+        <p>¡Gracias por tu compra!</p>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+    console.log(`Correo enviado exitosamente a ${pendingTicket.customerEmail}`);
+  } catch (error) {
+    console.error('Error al enviar el correo:', error);
+    throw new Error('Error al enviar los boletos por correo');
+  }
   
   return generatedTickets;
 };
