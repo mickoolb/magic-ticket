@@ -65,10 +65,10 @@ export default {
 				},
 				// MagicTicket custom colors
 				magic: {
-					DEFAULT: '#8A6FD8', // Main violet
+					DEFAULT: '#7a42ff', // Bright violet/purple
 					light: '#E5DEFF', // Soft light violet
-					dark: '#5A4A8F', // Darker violet
-					gold: '#F0D19F', // Soft gold
+					dark: '#2c1e50', // Dark mystic purple
+					gold: '#f2c300', // Vibrant gold
 					pink: '#FFDEE2', // Soft pink
 					peach: '#FDE1D3', // Soft peach
 					blue: '#D3E4FD', // Soft blue

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md border-b border-magic-light py-4 sticky top-0 z-50">
+    <nav className="bg-magic-dark/80 backdrop-blur-md border-b border-magic/20 py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -21,13 +21,13 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/events" className="text-magic-dark hover:text-magic font-medium transition-colors">
+            <Link to="/events" className="text-white hover:text-magic-gold font-medium transition-colors">
               Eventos
             </Link>
-            <Link to="/about" className="text-magic-dark hover:text-magic font-medium transition-colors">
+            <Link to="/about" className="text-white hover:text-magic-gold font-medium transition-colors">
               Quiénes Somos
             </Link>
-            <Link to="/admin" className="text-magic-dark hover:text-magic font-medium transition-colors">
+            <Link to="/admin" className="text-white hover:text-magic-gold font-medium transition-colors">
               Administrador
             </Link>
             <Button asChild className="magic-button">

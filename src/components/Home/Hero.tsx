@@ -1,18 +1,56 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, Star } from 'lucide-react';
 import { events } from '@/data/events';
+import CountdownTimer from '@/components/CountdownTimer';
 
 const featuredEvent = events[0];
 
 const Hero = () => {
+  // Referencia para crear partículas
+  const particlesRef = useRef<HTMLDivElement>(null);
+
+  // Función para crear partículas de luz flotantes
+  useEffect(() => {
+    const container = particlesRef.current;
+    if (!container) return;
+    
+    // Limpiar partículas existentes
+    container.innerHTML = '';
+    
+    // Crear nuevas partículas
+    for (let i = 0; i < 15; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      
+      // Posición aleatoria
+      const posX = Math.random() * 100;
+      const posY = Math.random() * 100;
+      particle.style.left = `${posX}%`;
+      particle.style.bottom = `${posY}%`;
+      
+      // Tamaño aleatorio
+      const size = Math.random() * 6 + 4;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      
+      // Animación con retraso aleatorio
+      particle.style.animationDelay = `${Math.random() * 5}s`;
+      
+      container.appendChild(particle);
+    }
+  }, []);
+  
   return (
     <div className="relative overflow-hidden pb-8">
       {/* Background elements - Ajustados para evitar problemas de superposición */}
-      <div className="mandala-bg w-[800px] h-[800px] top-[-400px] right-[-400px] opacity-30"></div>
-      <div className="mandala-bg w-[600px] h-[600px] bottom-[-300px] left-[-300px] opacity-30"></div>
+      <div className="mandala-bg w-[800px] h-[800px] top-[-400px] right-[-400px]"></div>
+      <div className="mandala-bg w-[600px] h-[600px] bottom-[-300px] left-[-300px]"></div>
+      
+      {/* Particles container */}
+      <div ref={particlesRef} className="magic-particles"></div>
       
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -29,19 +67,26 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-lg text-magic-dark/80 max-w-lg">
-              Un evento único con música, baile y karaoke en uno de los entornos naturales más hermosos de Chile. Compra tu boleto por solo $5,900.
+            <p className="text-lg text-white/90 max-w-lg">
+              ¡No dejes pasar esta oportunidad única! Vive la experiencia de 'Entre Diosas y Volcanes'. Adquiere tu entrada por solo $5,990, asegura tu lugar para el 17 de mayo de 2025 y Atrévete a ganar un premio mostrando tu arte en el Micrófono Abierto. ¡Te esperamos para una noche inolvidable!
             </p>
             
+            <div className="mb-6">
+              <CountdownTimer targetDate="2025-05-17" />
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild className="magic-button">
+              <Button asChild className="magic-button shadow-lg shadow-magic/30 hover:animate-pulse-soft">
                 <Link to="/buy?event=1">
                   Comprar Boleto
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="border-magic hover:bg-magic-light transition-colors">
-                <Link to="/events/1">Ver Detalles</Link>
+              <Button asChild variant="outline" className="border-magic-gold text-magic-gold hover:bg-magic-dark/50 transition-colors">
+                <Link to="/events/1">
+                  <Star className="mr-2 h-4 w-4" />
+                  Ver Detalles
+                </Link>
               </Button>
             </div>
           </div>
@@ -50,8 +95,8 @@ const Hero = () => {
             <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-6 border border-magic-light shadow-xl">
               <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-magic-light to-white">
                 <img 
-                  src={featuredEvent.image}
-                  alt="Cascada de las Ánimas" 
+                  src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200" 
+                  alt="Entre Diosas y Volcanes" 
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-magic-dark/40 to-transparent flex items-end p-6">

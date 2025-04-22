@@ -24,9 +24,9 @@ export const events: Event[] = [
     time: '10:00 AM - 6:00 PM',
     location: 'Cascada de las Ánimas',
     address: 'San José de Maipo, Región Metropolitana, Chile',
-    price: 5900,
+    price: 5990,
     instructor: 'Varios Artistas Invitados',
-    image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200',
     description: 'Un evento inolvidable con música, baile, karaoke y mucha diversión en un entorno natural único.',
     longDescription: `
       Te invitamos a "Entre Diosas y Volcanes", un evento único en la majestuosa Cascada de las Ánimas, ubicada en el corazón de la cordillera de los Andes chilenos.

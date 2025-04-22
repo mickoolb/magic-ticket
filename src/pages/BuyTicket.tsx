@@ -332,48 +332,72 @@ const BuyTicket = () => {
                     </p>
                     
                     <div className="space-y-4">
-                      <div className="bg-white rounded-md p-3 border border-magic-light">
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
                         <div className="flex justify-between items-center">
-                          <span className="text-magic-dark/70">Banco:</span>
+                          <span className="text-white/70">Banco:</span>
                           <div className="flex items-center">
-                            <span className="font-semibold">Banco MagicTicket</span>
-                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2" onClick={() => handleCopyToClipboard("Banco MagicTicket", "Nombre del banco copiado")}>
+                            <span className="font-semibold">Mercado Pago</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("Mercado Pago", "Nombre del banco copiado")}>
                               <CopyIcon className="h-4 w-4" />
                             </Button>
                           </div>
                         </div>
                       </div>
                       
-                      <div className="bg-white rounded-md p-3 border border-magic-light">
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
                         <div className="flex justify-between items-center">
-                          <span className="text-magic-dark/70">Titular:</span>
+                          <span className="text-white/70">Titular:</span>
                           <div className="flex items-center">
-                            <span className="font-semibold">MagicTicket S.A.</span>
-                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2" onClick={() => handleCopyToClipboard("MagicTicket S.A.", "Nombre del titular copiado")}>
+                            <span className="font-semibold">Ymairy del Carmen Arrivillaga Monsalve</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("Ymairy del Carmen Arrivillaga Monsalve", "Nombre del titular copiado")}>
                               <CopyIcon className="h-4 w-4" />
                             </Button>
                           </div>
                         </div>
                       </div>
                       
-                      <div className="bg-white rounded-md p-3 border border-magic-light">
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
                         <div className="flex justify-between items-center">
-                          <span className="text-magic-dark/70">Cuenta:</span>
+                          <span className="text-white/70">RUT:</span>
                           <div className="flex items-center">
-                            <span className="font-semibold">1234-5678-9012-3456</span>
-                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2" onClick={() => handleCopyToClipboard("1234-5678-9012-3456", "Número de cuenta copiado")}>
+                            <span className="font-semibold">255211544</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("255211544", "RUT copiado")}>
                               <CopyIcon className="h-4 w-4" />
                             </Button>
                           </div>
                         </div>
                       </div>
                       
-                      <div className="bg-white rounded-md p-3 border border-magic-light">
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
                         <div className="flex justify-between items-center">
-                          <span className="text-magic-dark/70">CLABE:</span>
+                          <span className="text-white/70">Tipo de cuenta:</span>
                           <div className="flex items-center">
-                            <span className="font-semibold">012345678901234567</span>
-                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2" onClick={() => handleCopyToClipboard("012345678901234567", "CLABE copiada")}>
+                            <span className="font-semibold">Cuenta Vista</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("Cuenta Vista", "Tipo de cuenta copiado")}>
+                              <CopyIcon className="h-4 w-4" />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
+                        <div className="flex justify-between items-center">
+                          <span className="text-white/70">Número:</span>
+                          <div className="flex items-center">
+                            <span className="font-semibold">1025996448</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("1025996448", "Número de cuenta copiado")}>
+                              <CopyIcon className="h-4 w-4" />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-magic-dark/60 rounded-md p-3 border border-magic/30 text-white">
+                        <div className="flex justify-between items-center">
+                          <span className="text-white/70">Email:</span>
+                          <div className="flex items-center">
+                            <span className="font-semibold">patagonia.luztribal@gmail.com</span>
+                            <Button variant="ghost" size="icon" className="h-8 w-8 ml-2 text-magic-gold hover:text-magic-gold/80" onClick={() => handleCopyToClipboard("patagonia.luztribal@gmail.com", "Email copiado")}>
                               <CopyIcon className="h-4 w-4" />
                             </Button>
                           </div>
