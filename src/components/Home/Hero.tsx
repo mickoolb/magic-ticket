@@ -80,7 +80,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild className="magic-button shadow-lg shadow-magic/30 hover:animate-pulse-soft">
-                <Link to="/buy?event=1">
+                <Link to="/buy">
                   Comprar Boleto
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
