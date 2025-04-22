@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <Link 
               to="/artists" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300 text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               <Users className="h-5 w-5 text-magic" />
@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
             <Link 
               to="/admin" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300 text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               <ShieldCheck className="h-5 w-5 text-magic" />
