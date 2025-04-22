@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Ticket, Calendar, Users, ShieldCheck } from 'lucide-react';
@@ -18,24 +19,20 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/events" className="text-white hover:text-magic-gold font-medium transition-colors">
+            <Link to="/events" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
               Eventos
             </Link>
-            <Link to="/artists" className="text-white hover:text-magic-gold font-medium transition-colors">
+            <Link to="/artists" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
               Artistas Invitados
             </Link>
-            <Link to="/about" className="text-white hover:text-magic-gold font-medium transition-colors">
-              Quiénes Somos
-            </Link>
-            <Link to="/admin" className="text-white hover:text-magic-gold font-medium transition-colors">
+            <Link to="/admin" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
               Administrador
             </Link>
-            <Button asChild className="magic-button">
+            <Button asChild className="magic-button scale-100 hover:scale-105 transition-transform duration-300">
               <Link to="/buy">Comprar Boletos</Link>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -47,13 +44,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md pt-4 pb-6 px-4 animate-fade-in">
           <div className="flex flex-col space-y-4">
             <Link 
               to="/events" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors"
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               <Calendar className="h-5 w-5 text-magic" />
@@ -61,23 +57,15 @@ const Navbar = () => {
             </Link>
             <Link 
               to="/artists" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors"
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               <Users className="h-5 w-5 text-magic" />
               <span>Artistas Invitados</span>
             </Link>
             <Link 
-              to="/about" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <Users className="h-5 w-5 text-magic" />
-              <span>Quiénes Somos</span>
-            </Link>
-            <Link 
               to="/admin" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors"
+              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               <ShieldCheck className="h-5 w-5 text-magic" />

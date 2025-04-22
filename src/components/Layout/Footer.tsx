@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-magic-light to-white border-t border-magic-light mt-12">
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Logo and About */}
           <div className="col-span-1">
             <div className="flex items-center mb-4">
@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-magic-dark/80 mb-4">
-              Tu plataforma espiritual para la compra y validación de boletos para eventos especiales.
+              Tu plataforma espiritual para eventos transformadores y experiencias únicas.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-magic hover:text-magic-dark transition-colors">
@@ -32,41 +32,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
-          <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4 text-magic-dark">Enlaces Rápidos</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-magic-dark/80 hover:text-magic transition-colors">
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link to="/events" className="text-magic-dark/80 hover:text-magic transition-colors">
-                  Eventos
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-magic-dark/80 hover:text-magic transition-colors">
-                  Quiénes Somos
-                </Link>
-              </li>
-              <li>
-                <Link to="/buy" className="text-magic-dark/80 hover:text-magic transition-colors">
-                  Comprar Boletos
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 text-magic-dark">Contacto</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 text-magic mr-2" />
-                <a href="mailto:info@magicticket.com" className="text-magic-dark/80 hover:text-magic transition-colors">
-                  info@magicticket.com
+                <a href="mailto:patagonia.luztribal@gmail.com" className="text-magic-dark/80 hover:text-magic transition-colors">
+                  patagonia.luztribal@gmail.com
                 </a>
               </li>
               <li className="flex items-center">

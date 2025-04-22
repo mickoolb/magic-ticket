@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -10,13 +11,10 @@ import Index from "./pages/Index";
 import Events from "./pages/Events";
 import EventDetail from "./pages/EventDetail";
 import BuyTicket from "./pages/BuyTicket";
-import About from "./pages/About";
 import Admin from "./pages/Admin";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 import Artists from "./pages/Artists";
-
-import QRCode from 'qrcode';
 
 const queryClient = new QueryClient();
 
@@ -34,7 +32,6 @@ const App = () => {
                 <Route path="/events" element={<Events />} />
                 <Route path="/events/:id" element={<EventDetail />} />
                 <Route path="/buy" element={<BuyTicket />} />
-                <Route path="/about" element={<About />} />
                 <Route path="/artists" element={<Artists />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/dashboard" element={<AdminDashboard />} />
