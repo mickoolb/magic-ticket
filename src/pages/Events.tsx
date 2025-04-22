@@ -7,16 +7,20 @@ import {
   Calendar, 
   MapPin, 
   Users, 
-  Tag, 
   Search, 
-  ArrowRight 
+  ArrowRight,
+  Star 
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
 
 const Events = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // Get featured event (first event)
+  const featuredEvent = events[0];
 
   // Get all unique tags
   const allTags = Array.from(
@@ -36,15 +40,73 @@ const Events = () => {
 
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-magic-light/50 to-white py-12 md:py-16">
+      <div className="bg-gradient-to-b from-magic-dark/90 to-background py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-magic-dark mb-4">
-              Descubre Eventos Espirituales
-            </h1>
-            <p className="text-magic-dark/70 max-w-2xl mx-auto">
-              Explora y conecta con experiencias transformadoras que elevarán tu consciencia
-            </p>
+          {/* Featured Event */}
+          <div className="mb-16">
+            <div 
+              className="relative overflow-hidden rounded-2xl bg-magic-dark/40 backdrop-blur-sm border border-magic/20 shadow-xl transition-all duration-300 hover:shadow-magic/30 group"
+            >
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200')] opacity-30 bg-cover bg-center" />
+              <div className="absolute inset-0 bg-gradient-to-t from-magic-dark via-magic-dark/50 to-transparent" />
+              
+              <div className="relative p-8 md:p-12">
+                <div className="max-w-3xl mx-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {featuredEvent.tags.map(tag => (
+                      <span 
+                        key={tag} 
+                        className="text-xs bg-magic/20 text-white px-3 py-1 rounded-full backdrop-blur-sm border border-magic/30"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <h2 className="font-cinzel text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-white via-magic-gold to-magic bg-clip-text text-transparent">
+                    {featuredEvent.title}
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+                    {featuredEvent.description}
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div className="flex items-center text-white/80">
+                      <Calendar className="h-5 w-5 mr-3 text-magic" />
+                      <span>{featuredEvent.date} • {featuredEvent.time}</span>
+                    </div>
+                    <div className="flex items-center text-white/80">
+                      <MapPin className="h-5 w-5 mr-3 text-magic" />
+                      <span>{featuredEvent.location}</span>
+                    </div>
+                    <div className="flex items-center text-white/80">
+                      <Users className="h-5 w-5 mr-3 text-magic" />
+                      <span>{featuredEvent.instructor}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                    <div className="text-3xl font-bold text-white flex items-center gap-2">
+                      <Star className="h-6 w-6 text-magic-gold" />
+                      <span>${featuredEvent.price.toLocaleString()}</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <Button asChild variant="outline" className="group-hover:bg-magic/20 border-magic hover:bg-magic/30 text-white transition-all duration-300">
+                        <Link to={`/events/${featuredEvent.id}`}>
+                          Detalles
+                        </Link>
+                      </Button>
+                      <Button asChild className="bg-magic hover:bg-magic/90 text-white transition-all duration-300">
+                        <Link to={`/buy?event=${featuredEvent.id}`}>
+                          Comprar
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Search and filters */}
