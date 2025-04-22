@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Ticket, Calendar, Users, ShieldCheck } from 'lucide-react';
@@ -19,9 +18,6 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/events" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
-              Eventos
-            </Link>
             <Link to="/artists" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
               Artistas Invitados
             </Link>
@@ -47,14 +43,6 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md pt-4 pb-6 px-4 animate-fade-in">
           <div className="flex flex-col space-y-4">
-            <Link 
-              to="/events" 
-              className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <Calendar className="h-5 w-5 text-magic" />
-              <span>Eventos</span>
-            </Link>
             <Link 
               to="/artists" 
               className="flex items-center space-x-2 p-2 rounded-lg hover:bg-magic-light transition-colors duration-300"
