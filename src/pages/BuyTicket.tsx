@@ -519,20 +519,20 @@ const BuyTicket = () => {
                     <h3 className="font-semibold text-magic-dark mb-3">Detalles de tu solicitud:</h3>
                     <div className="text-left space-y-2">
                       <div className="flex justify-between">
-                        <span className="text-magic-dark/70">Referencia:</span>
-                        <span className="font-mono">{paymentReference}</span>
+                        <span className="text-black font-medium">Referencia:</span>
+                        <span className="font-mono text-black">{paymentReference}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-magic-dark/70">Evento:</span>
-                        <span>{event.title}</span>
+                        <span className="text-black font-medium">Evento:</span>
+                        <span className="text-black">{event.title}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-magic-dark/70">Cantidad:</span>
-                        <span>{quantity} boleto(s)</span>
+                        <span className="text-black font-medium">Cantidad:</span>
+                        <span className="text-black">{quantity} boleto(s)</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-magic-dark/70">Total:</span>
-                        <span className="font-semibold">${(event.price * quantity).toLocaleString()}</span>
+                        <span className="text-black font-medium">Total:</span>
+                        <span className="font-semibold text-black">${(event.price * quantity).toLocaleString()}</span>
                       </div>
                     </div>
                   </div>
