@@ -22,7 +22,7 @@ export const events: Event[] = [
     date: '17 de Mayo, 2025',
     time: '16:00 a 22:00 Hrs',
     location: 'Cascada de las Ánimas',
-    address: 'Camino al Volcán 3107, San Alfonso, Cajón del Maipo',
+    address: 'Camino al Volcán Nº 31087, San Alfonso',
     price: 5990,
     instructor: 'Amar de Volcán, Euffe, Nina Inti, Anitakaren y las Diosas Pélvicas',
     image: '/attached_assets/entre deosas.jpeg',
@@ -67,10 +67,10 @@ Un espacio sagrado de renovación energética y purificación que elevará tu ex
 👗 RECOMENDACIONES 👗
 
 • Ropa cómoda y calzado adecuado
-• Protector solar
-• Agua
-• Abrigo ligero
-• ¡Toda tu energía y disposición!
+Protector solar
+Agua
+Abrigo ligero
+¡Toda tu energía y disposición!
 
 💫 ¿POR QUÉ NO TE LO PUEDES PERDER? 💫
 

@@ -45,7 +45,7 @@ const TicketFAQ = () => {
           <AccordionContent className="text-magic-dark/80">
             <p className="flex items-start gap-2">
               <Check className="h-4 w-4 text-magic mt-1 flex-shrink-0" />
-              <span>Por lo menos debes llegar 30 minutos antes del inicio del show.</span>
+              <span>Por lo menos debes llegar 15 minutos antes del inicio del show.</span>
             </p>
           </AccordionContent>
         </AccordionItem>
