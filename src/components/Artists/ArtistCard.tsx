@@ -15,11 +15,11 @@ const ArtistCard = ({ artist, onClick }: ArtistCardProps) => {
       onClick={onClick}
     >
       <CardContent className="p-0">
-        <div className="relative aspect-[3/4]">
+        <div className="relative">
           <img
             src={artist.image}
             alt={artist.name}
-            className="w-full h-full object-cover bg-magic-dark/60"
+            className="w-full aspect-[4/3] object-contain bg-magic-dark/60"
           />
           <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <h3 className="text-xl font-bold text-white">{artist.name}</h3>
