@@ -17,7 +17,7 @@ const CTASection = () => {
           
           <div className="relative z-10 max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Música, baile y karaoke en Cascada de las Ánimas
+              Música, baile y microfono en Cascada de las Ánimas
             </h2>
             <p className="text-white/90 mb-8 text-lg">
               No esperes más para disfrutar de "Entre Diosas y Volcanes". 
