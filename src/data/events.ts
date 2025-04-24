@@ -24,7 +24,7 @@ export const events: Event[] = [
     location: 'Cascada de las Ánimas',
     address: 'Camino al Volcán 3107, San Alfonso, Cajón del Maipo',
     price: 5990,
-    instructor: 'Amar de Volcán, Euffe, Nina Inti, Anita Karen y las Diosas Pélvicas',
+    instructor: 'Amar de Volcán, Euffe, Nina Inti, Anitakaren y las Diosas Pélvicas',
     image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200',
     description: 'Un evento inolvidable con música, baile, y mucho más en un entorno natural único.',
     longDescription: `✨ ENTRE DIOSAS Y VOLCANES ✨
@@ -49,7 +49,7 @@ Un viaje sonoro a través del R&B, pop y ritmos urbanos que te invitará a refle
 • NINA INTI •
 Cantante, actriz y bailarina de raíces quechua. Su música fusiona lo ancestral con lo moderno, transmitiendo un poderoso mensaje de liberación.
 
-• ANITA KAREN Y LAS DIOSAS PÉLVICAS •
+• ANITAKAREN Y LAS DIOSAS PÉLVICAS •
 Un colectivo que celebra el empoderamiento femenino y la conexión profunda con el cuerpo a través de la medicina pélvica y danza.
 
 🔥 EXPERIENCIA ESPECIAL 🔥
