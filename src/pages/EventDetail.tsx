@@ -165,7 +165,7 @@ const EventDetail = () => {
                     <div className="flex items-start">
                       <Ticket className="h-5 w-5 mr-2 text-magic mt-0.5" />
                       <div className="text-sm text-magic-dark/80">
-                        Cada boleto incluye acceso completo al evento, materiales necesarios y certificado de participación.
+                        Cada boleto incluye acceso completo al evento.
                       </div>
                     </div>
                   </div>
