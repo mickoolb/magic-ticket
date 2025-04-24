@@ -24,5 +24,17 @@ export const artists: Artist[] = [
     name: "Nina Inti",
     image: "/attached_assets/WhatsApp Image 2025-04-19 at 1.33.47 PM (1).jpeg",
     bio: "Nina Inti, reconocida por su poderosa voz y presencia escénica, trae consigo la sabiduría de las tradiciones andinas. Con más de una década de experiencia en la música ceremonial, sus presentaciones son una invitación a conectar con nuestra esencia espiritual a través del canto y la danza."
+  },
+  {
+    id: "ymairy",
+    name: "Ymairy Arrivillaga Monsalve",
+    image: "/attached_assets/97619f6b-d114-4329-995a-3b887c62bab1.jpg",
+    bio: "Conocida como Yma y Mima Mística, su propósito es acompañar procesos de consciencia, empoderamiento y transformación, guiando hacia la reconexión con el cuerpo y la verdadera esencia. Su enfoque integra terapias de Aromas, Sonido y Danza, fusionadas con Astrología, Coaching y Sabiduría Ancestral, creando experiencias únicas que facilitan la conexión con los elementos y el universo interior. Esto permite que cada ser redescubra su poder, resignificando su pasado."
+  },
+  {
+    id: "anitakaren",
+    name: "Anitakaren Bee",
+    image: "/attached_assets/757f945a-90a1-468e-abe5-b3a574188366.jpg",
+    bio: "Anitakaren, artista auténtica y guía de transformación, acompaña a una tribu creciente de Diosas Pélvicas en su viaje hacia el empoderamiento, conectando profundamente con el cuerpo, la danza y la naturaleza. A través de su Método Medicina Pélvica, guía a las mujeres a reconectar con su energía vital, su fuego interno y desbloquear su poder ancestral, formando un camino de sanación y transformación que se expande desde la raíz hacia el mundo."
   }
 ];
