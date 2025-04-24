@@ -19,7 +19,7 @@ const ArtistCard = ({ artist, onClick }: ArtistCardProps) => {
           <img
             src={artist.image}
             alt={artist.name}
-            className="w-full h-full object-cover bg-magic-dark/60"
+            className="w-full h-full object-contain bg-magic-dark/60"
           />
           <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
             <h3 className="text-xl font-bold text-white">{artist.name}</h3>
