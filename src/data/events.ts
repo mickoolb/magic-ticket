@@ -67,10 +67,7 @@ Un espacio sagrado de renovación energética y purificación que elevará tu ex
 👗 RECOMENDACIONES 👗
 
 • Ropa cómoda y calzado adecuado
-Protector solar
-Agua
-Abrigo ligero
-¡Toda tu energía y disposición!
+• ¡Toda tu energía y disposición!
 
 💫 ¿POR QUÉ NO TE LO PUEDES PERDER? 💫
 
