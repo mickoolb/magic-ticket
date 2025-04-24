@@ -25,7 +25,7 @@ export const events: Event[] = [
     address: 'Camino al Volcán 3107, San Alfonso, Cajón del Maipo',
     price: 5990,
     instructor: 'Amar de Volcán, Euffe, Nina Inti, Anitakaren y las Diosas Pélvicas',
-    image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200',
+    image: '/attached_assets/entre deosas.jpeg',
     description: 'Un evento inolvidable con música, baile, y mucho más en un entorno natural único.',
     longDescription: `✨ ENTRE DIOSAS Y VOLCANES ✨
 
