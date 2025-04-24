@@ -27,37 +27,63 @@ export const events: Event[] = [
     instructor: 'Amar de Volcán, Euffe, Nina Inti, Anita Karen y las Diosas Pélvicas',
     image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&q=80&w=1200',
     description: 'Un evento inolvidable con música, baile, y mucho más en un entorno natural único.',
-    longDescription: `Acerca del evento: Entre Diosas y Volcanes
-Fecha: Sábado 17 de mayo de 2025
-Hora: De 16:00 a 22:00 Hrs
-Lugar: Cascada de las Ánimas, Camino al Volcán 3107, San Alfonso, Cajón del Maipo
+    longDescription: `✨ ENTRE DIOSAS Y VOLCANES ✨
 
-Te invitamos a "Entre Diosas y Volcanes", un evento único que reunirá arte, música y danza en un entorno natural incomparable. Disfruta de una tarde llena de emociones, conexión y expresiones auténticas, donde cada presentación te llevará a un viaje personal de autodescubrimiento y empoderamiento.
+🗓️ Sábado 17 de mayo de 2025
+⏰ 16:00 a 22:00 Hrs
+📍 Cascada de las Ánimas
+   Camino al Volcán 3107, San Alfonso, Cajón del Maipo
 
-Artistas invitados:
-Amar de Volcán: Artista multidisciplinaria que fusiona danza y música con gran autenticidad, creando una experiencia única y transformadora.
+💫 UN VIAJE HACIA TU PODER INTERIOR 💫
 
-Euffe: Un viaje sonoro a través del R&B, pop y ritmos urbanos. Euffe te invita a reflexionar y sanar con su música profunda y emocional.
+Te invitamos a una experiencia mágica que fusiona arte, música y danza en un entorno natural incomparable. Una tarde diseñada para despertar tu esencia, conectar con tu poder interior y celebrar la vida en su máxima expresión.
 
-Nina Inti: Cantante, actriz y bailarina de raíces quechua. Su música fusiona lo ancestral con lo moderno, transmitiendo un poderoso mensaje de liberación y resistencia cultural.
+🌟 ARTISTAS INVITAD@S 🌟
 
-Anita Karen y las Diosas Pélvicas: Anita Karen, con su talento en medicina pélvica y danza, junto a las Diosas Pélvicas, un colectivo que celebra el empoderamiento femenino y la conexión profunda con el cuerpo.
+• AMAR DE VOLCÁN •
+Artista multidisciplinaria que fusiona danza y música con gran autenticidad, creando una experiencia única y transformadora.
 
-Además:
-Ceremonia Ritual Ave Fénix: Un espacio de renovación energética y purificación que elevará la experiencia del evento.
+• EUFFE •
+Un viaje sonoro a través del R&B, pop y ritmos urbanos que te invitará a reflexionar y sanar con música profunda y emocional.
 
-Lo que incluye:
-Acceso completo a todos los shows y actividades artísticas.
-Un ambiente seguro y acogedor, ideal para disfrutar de la música y las presentaciones.
+• NINA INTI •
+Cantante, actriz y bailarina de raíces quechua. Su música fusiona lo ancestral con lo moderno, transmitiendo un poderoso mensaje de liberación.
 
-Recomendaciones:
-Trae ropa cómoda y calzado adecuado.
-Protector solar, agua y un abrigo ligero son recomendados para tu comodidad.
+• ANITA KAREN Y LAS DIOSAS PÉLVICAS •
+Un colectivo que celebra el empoderamiento femenino y la conexión profunda con el cuerpo a través de la medicina pélvica y danza.
 
-¿Por qué asistir?
-Este evento no es solo una ocasión para disfrutar de arte y música en vivo, es una oportunidad para reconectar con lo esencial, para liberarte de las cargas cotidianas y sumergirte en un espacio de auténtica expresión y empoderamiento. Es el momento perfecto para compartir con otros, descubrir tu fuerza interior y celebrar la vida en toda su diversidad.
+🔥 EXPERIENCIA ESPECIAL 🔥
 
-"Entre Diosas y Volcanes" es una invitación a vivir el presente con intensidad, a escuchar tu voz interna y a ser parte de una experiencia colectiva que no solo transforma el cuerpo, sino también el alma. No te pierdas esta oportunidad de reconectar contigo mismo y con la energía del universo. ¡Nos vemos el 17 de mayo!`,
+CEREMONIA RITUAL AVE FÉNIX
+Un espacio sagrado de renovación energética y purificación que elevará tu experiencia a otro nivel.
+
+✨ TU TICKET INCLUYE ✨
+
+• Acceso completo a todos los shows
+• Participación en actividades artísticas
+• Espacio seguro y acogedor
+• Experiencia transformadora única
+
+👗 RECOMENDACIONES 👗
+
+• Ropa cómoda y calzado adecuado
+• Protector solar
+• Agua
+• Abrigo ligero
+• ¡Toda tu energía y disposición!
+
+💫 ¿POR QUÉ NO TE LO PUEDES PERDER? 💫
+
+Este no es solo un evento... es una invitación a:
+• Reconectar con tu esencia
+• Liberarte de las cargas cotidianas
+• Descubrir tu fuerza interior
+• Ser parte de una comunidad mágica
+• Transformar cuerpo, mente y alma
+
+"Entre Diosas y Volcanes" es tu oportunidad de vivir el presente con intensidad, escuchar tu voz interior y ser parte de una experiencia colectiva única. 
+
+✨ ¡Nos vemos el 17 de mayo para despertar junt@s nuestra magia interior! ✨`,
     capacity: 100,
     availableTickets: 80,
     tags: ['Música', 'Baile', 'Ceremonia', 'Danza']
