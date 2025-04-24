@@ -64,7 +64,7 @@ const EventDetail = () => {
                   <img 
                     src={event.image} 
                     alt={event.title} 
-                    className="w-full h-64 md:h-96 object-cover"
+                    className="w-full h-auto object-contain max-h-[600px]"
                   />
                   <div className="absolute top-0 right-0 bg-magic text-white text-sm font-medium px-3 py-1 rounded-bl-lg">
                     {event.date.split(',')[0]}

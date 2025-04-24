@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Ticket, ShieldCheck, QrCode, CalendarCheck } from 'lucide-react';
 
