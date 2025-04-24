@@ -34,7 +34,7 @@ export const artists: Artist[] = [
   {
     id: "anitakaren",
     name: "Anitakaren Bee",
-    image: "/attached_assets/757f945a-90a1-468e-abe5-b3a574188366.jpg",
+    image: "/attached_assets/diosas-pelvicas-group.jpg",
     bio: "Anitakaren, artista auténtica y guía de transformación, acompaña a una tribu creciente de Diosas Pélvicas en su viaje hacia el empoderamiento, conectando profundamente con el cuerpo, la danza y la naturaleza. A través de su Método Medicina Pélvica, guía a las mujeres a reconectar con su energía vital, su fuego interno y desbloquear su poder ancestral, formando un camino de sanación y transformación que se expande desde la raíz hacia el mundo."
   }
 ];
