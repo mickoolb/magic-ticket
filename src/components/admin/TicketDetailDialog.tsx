@@ -41,35 +41,35 @@ const TicketDetailDialog: React.FC<TicketDetailDialogProps> = ({
         </DialogHeader>
 
         <div className="space-y-4">
-          <div className="bg-white p-6 rounded-lg shadow-md border border-magic-light">
-            <div className="mx-auto w-48 h-48 mb-4">
-              <img src={selectedTicket.qrCode} alt="Código QR" className="w-full h-full object-contain" />
-            </div>
-
-            <h3 className="text-xl font-bold text-magic-dark text-center mb-4">
-              {selectedTicket.eventName}
-            </h3>
+          <div className="bg-gradient-to-br from-magic/10 via-white to-magic-light/20 p-4 rounded-lg shadow-lg border border-magic/30 backdrop-blur-sm">
+            <div className="flex items-center gap-4">
+              <div className="w-32 h-32">
+                <img src={selectedTicket.qrCode} alt="Código QR" className="w-full h-full object-contain p-2 bg-white rounded-lg shadow-inner" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-black bg-magic-light/20 px-3 py-1 rounded-md inline-block">
+                  {selectedTicket.eventName}
+                </h3>
 
             {/* Customer name display - prominently shown below event name */}
-            <div className="bg-magic-light/10 p-3 rounded-md border border-magic-light/20 mb-4">
-              <div className="flex items-center justify-between">
+            <div className="mt-2 space-y-2">
+              <div className="flex items-center justify-between bg-white/80 p-2 rounded-md shadow-sm">
                 <div className="flex items-center gap-2">
-                  <User className="h-5 w-5 text-magic" />
-                  <span className="text-sm font-medium text-magic-dark">Comprado por:</span>
+                  <User className="h-4 w-4 text-magic" />
+                  <span className="text-sm font-medium text-black">Comprado por:</span>
                 </div>
-                <span className="font-medium text-magic-dark">{selectedTicket.customerName}</span>
+                <span className="font-medium text-black">{selectedTicket.customerName}</span>
               </div>
-            </div>
 
-            {/* Ticket ID display - prominently shown below event name */}
-            <div className="bg-magic-light/20 p-3 rounded-md border border-magic-light/30 mb-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Fingerprint className="h-5 w-5 text-magic" />
-                  <span className="text-sm font-medium text-magic-dark">ID del Boleto:</span>
+              {/* Ticket ID display - prominently shown with magical styling */}
+              <div className="bg-magic/5 p-2 rounded-md border border-magic/20 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Fingerprint className="h-4 w-4 text-magic" />
+                    <span className="text-sm font-medium text-black">ID del Boleto:</span>
+                  </div>
+                  <span className="font-mono font-semibold text-black bg-magic-light/30 px-2 py-0.5 rounded">{selectedTicket.id}</span>
                 </div>
-                <span className="font-mono font-semibold text-magic">{selectedTicket.id}</span>
-              </div>
               <p className="text-xs text-magic-dark/70 mt-1">
                 Utiliza este ID para validar el boleto en el panel de administración
               </p>
@@ -93,12 +93,14 @@ const TicketDetailDialog: React.FC<TicketDetailDialogProps> = ({
               </div>
             </div>
 
-            <div className="space-y-3">
-              <div className="flex items-start gap-2">
-                <Calendar className="h-4 w-4 text-magic mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-sm text-magic-dark/70">Fecha del Evento</p>
-                  <p className="font-medium">{new Date(selectedTicket.eventDate).toLocaleDateString()}</p>
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <div className="bg-white/80 p-2 rounded-md shadow-sm">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-magic" />
+                  <div>
+                    <p className="text-xs text-black">Fecha del Evento</p>
+                    <p className="font-medium text-black">{new Date(selectedTicket.eventDate).toLocaleDateString()}</p>
+                  </div>
                 </div>
               </div>
 
