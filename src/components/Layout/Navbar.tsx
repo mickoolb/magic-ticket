@@ -19,7 +19,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/artists" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
-              Artistas Invitados
+              Artistas Invitad@s
             </Link>
             <Link to="/admin" className="text-white hover:text-magic-gold font-medium transition-colors duration-300">
               Administrador
@@ -49,7 +49,7 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <Users className="h-5 w-5 text-magic" />
-              <span>Artistas Invitados</span>
+              <span>Artistas Invitad@s</span>
             </Link>
             <Link 
               to="/admin" 
