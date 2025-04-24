@@ -22,7 +22,7 @@ const ArtistDetail = ({ artist, onClose }: ArtistDetailProps) => {
         <img
           src={artist.image}
           alt={artist.name}
-          className="w-full rounded-lg object-contain bg-magic-dark/60 max-h-[500px]"
+          className="w-full rounded-lg object-cover bg-magic-dark/60 h-[500px]"
         />
         
         <div>
